@@ -1,31 +1,35 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime config for github.com/Waldo0926/uptime (made from the upptime/upptime template).
+# Checks every 5 minutes from GitHub Actions; a site that fails opens an issue and closes it when it is back.
+owner: Waldo0926
+repo: uptime
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Monash Hub
+    url: https://monashhub.secureview.tech
+  - name: Monash Hub API
+    url: https://monashhub.secureview.tech/api/health
+  - name: SecureView
+    url: https://secureview.tech
+  - name: 马莫百科 bot
+    url: https://wxbot.secureview.tech/health
+  - name: Tool docs
+    url: https://docs.secureview.tech
+  - name: Blog
+    url: https://blog.secureview.tech
+
+assignees:
+  - Waldo0926
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # Served by GitHub Pages at https://waldo0926.github.io/uptime/.
+  # For status.secureview.tech instead: add a CNAME record status -> waldo0926.github.io in Cloudflare
+  # (DNS only, grey cloud), then replace baseUrl with: cname: status.secureview.tech
+  baseUrl: /uptime
+  name: Waldo's projects
+  introTitle: "Status of the sites I run"
+  introMessage: "Checked every 5 minutes from GitHub Actions. Each outage opens an issue in this repository."
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
