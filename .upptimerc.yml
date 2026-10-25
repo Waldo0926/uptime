@@ -10,8 +10,13 @@ sites:
     url: https://monashhub.secureview.tech/api/health
   - name: SecureView
     url: https://secureview.tech
-  - name: 马莫百科 bot
+    slug: secureview
+  - name: SecureView API
+    url: https://secureview.tech/health/live
+    slug: secureview-api
+  - name: 马莫百科 WeChat bot
     url: https://wxbot.secureview.tech/health
+    slug: mumguide-bot
   - name: Tool docs
     url: https://docs.secureview.tech
   - name: Blog
